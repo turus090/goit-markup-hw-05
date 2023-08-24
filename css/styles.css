@@ -904,6 +904,6 @@ color: var(--white);
 
 }
 
-.modal_form_wrapper_checkbox-input:focus .modal_form_wrapper_checkbox_icon{
+.modal_form_wrapper_checkbox-input.modal_form_wrapper_checkbox_icon:focus{
   fill: #4D5AE5;
 }
