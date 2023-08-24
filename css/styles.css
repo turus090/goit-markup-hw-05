@@ -97,9 +97,6 @@ img {
 }
 
 
-.current{
- color: var(--ocean);
-}
 
 .header_nav {
   display: flex;
@@ -142,6 +139,15 @@ img {
 
 }
 
+
+.header_nav_list_item-link:hover {
+  color: var(--ocean);
+}
+
+.header_nav_list_item-link:focus {
+  color: var(--ocean);
+  
+}
 .header_nav_list_item-link.current::after{
   position: absolute;
   content: '';
@@ -155,14 +161,10 @@ img {
   color: var(--ocean);
   background-color: var(--ocean);
 }
-.header_nav_list_item-link:hover {
+.current{
   color: var(--ocean);
-}
-
-.header_nav_list_item-link:focus {
-  color: var(--ocean);
-}
-
+ }
+ 
 .header_address {
   margin-left: auto;
   font-style: normal;
@@ -525,12 +527,14 @@ margin-bottom: 8px;
 .nav_filter-btn:hover {
   color: #ffffff;
   border-radius: 4px;
+  border-color: transparent;
   background: var(--ocean);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12); 
 }
 .nav_filter-btn:focus {
   color: #ffffff;
   border-radius: 4px;
+  border-color: transparent;
   background: var(--ocean);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12); 
   border: 1px solid transparent;
@@ -630,7 +634,10 @@ margin-bottom: 8px;
  transform: translateY(100%);
  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
-
+.footer{
+  background-color: var(--navyblue); 
+  padding: 100px 0;
+}
 
 .footer_container{
   display: flex;
@@ -772,6 +779,7 @@ color: var(--white);
 
 .footer_form_wrapper_btn-icon{
   margin-left: 16px;
+  fill: #FFFFFF;
 }
 .modal {
   position: fixed;
@@ -792,6 +800,7 @@ color: var(--white);
 
 .modal_wrapper{
   position: absolute;
+  padding: 72px 24px 24px 24px; 
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -844,4 +853,28 @@ color: var(--white);
 
 .modal_wrapper_btn-icon:focus{
   fill: #ffffff
+}
+
+.modal_wrapper_text{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--navyblue);
+  margin-bottom: 16px;
+
+}
+
+.modal_form_wrapper{
+  margin-bottom: 8px;
+}
+
+.modal_form_wrapper_label{
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--gray);
+  display: block;
+  margin-bottom: 4px;
 }

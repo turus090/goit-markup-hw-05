@@ -372,13 +372,13 @@
           </li>
         </ul>
       </div>
-      <div class="footer_form"> 
+      <div class="footer_form">
         <p class="footer_form_text"> Subscribe</p>
         <form class="footer_form_wrapper">
           <label class="footer_form_wrapper_label">
-            <input class="footer_form_wrapper_label-input" name="footer-email"  type="email" placeholder="E-mail"/>
-           </label>
-           <button class="footer_form_wrapper_btn" type="submit">
+            <input class="footer_form_wrapper_label-input" name="footer-email" type="email" placeholder="E-mail" />
+          </label>
+          <button class="footer_form_wrapper_btn" type="submit">
             Subscribe
             <svg class="footer_form_wrapper_btn-icon" width="24" height="24">
               <use href="./images/icons.svg#icon-send"></use>
@@ -387,17 +387,26 @@
         </form>
       </div>
     </div>
-    </footer>
-    <div data-modal class="modal is-hidden">
-      <div class="modal_wrapper">
-        <button type="button" class="modal_wrapper_btn" data-modal-close>
-          <svg class="modal_wrapper_btn-icon" width="8" height="8">
-            <use href="./images/icons.svg#icon-close-black"></use>
-          </svg>
-        </button>
-      </div>
+  </footer>
+  <div data-modal class="modal is-hidden">
+    <div class="modal_wrapper">
+      <button type="button" class="modal_wrapper_btn" data-modal-close>
+        <svg class="modal_wrapper_btn-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+      <p class="modal_wrapper_text"> </p>
+      <form class="modal_form">
+        <div class="modal_form_wrapper">
+          <label class="modal_form_wrapper_label" for="user-name">
+            Name
+          </label>
+          
+        </div>
+      </form>
     </div>
-    <script src="./js/modal.js"></script>
+  </div>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
