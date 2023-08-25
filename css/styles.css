@@ -965,3 +965,31 @@ color: var(--white);
 .modal_form_wrapper_check_input:checked + label > svg {
   fill: var(--cloud);
 }
+
+.modal_form_wrapper_check_input:checked + label > span {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+
+.modal_form_wrapper_check_label-link{
+  color: var(--iris);
+}
+
+.btn_check{
+  display: block;
+  border-radius: 4px;
+  cursor: pointer;
+  min-width: 169px;
+  height: 56px;
+  font-family: "Roboto", sans-serif ;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  background-color: #4D5AE5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  border: none;
+  
+}
